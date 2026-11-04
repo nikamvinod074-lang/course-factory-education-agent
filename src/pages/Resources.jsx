@@ -1,0 +1,2 @@
+import { PageHeader, Card } from "../components/UI";
+export default function Resources() { return <><PageHeader title="Resources" description="Your collection of helpful learning materials."/><Card title="Resource library"><p>Resources module placeholder. Add notes, videos, links and documents here.</p></Card></>; }

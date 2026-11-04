@@ -1,0 +1,2 @@
+import { PageHeader, Card } from "../components/UI";
+export default function LearningPath() { return <><PageHeader title="Learning Path" description="A guided roadmap built around your learning goals."/><Card title="Your roadmap"><p>Learning path module placeholder. Add milestones, lessons and completion status here.</p></Card></>; }

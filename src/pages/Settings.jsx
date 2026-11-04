@@ -1,0 +1,2 @@
+import { PageHeader, Card } from "../components/UI";
+export default function Settings() { return <><PageHeader title="Settings" description="Manage your profile and learning preferences."/><Card title="Preferences"><p>Settings module placeholder. Add profile, notification and personalisation controls here.</p></Card></>; }

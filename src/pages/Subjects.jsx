@@ -1,0 +1,2 @@
+import { PageHeader, Card } from "../components/UI";
+export default function Subjects() { return <><PageHeader title="My Subjects" description="Organise the topics you are learning."/><Card title="Subject library"><p>Subjects module placeholder. Add subject cards and topic lists here.</p></Card></>; }

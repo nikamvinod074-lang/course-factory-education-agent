@@ -1,0 +1,2 @@
+import { PageHeader, Card, ProgressBar } from "../components/UI";
+export default function Progress() { return <><PageHeader title="My Progress" description="Review your learning activity and achievements."/><Card title="Learning progress"><p>Overall progress</p><ProgressBar value={55}/><p>55% complete</p></Card></>; }

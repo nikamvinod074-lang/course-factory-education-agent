@@ -1,0 +1,2 @@
+import { PageHeader, Card } from "../components/UI";
+export default function Practice() { return <><PageHeader title="Practice" description="Strengthen understanding through exercises."/><Card title="Practice centre"><p>Practice module placeholder. Add quizzes, exercises and assessments here.</p></Card></>; }
