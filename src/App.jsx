@@ -1,4 +1,6 @@
+
 import { Navigate, Route, Routes } from "react-router-dom";
+
 import AppLayout from "./components/AppLayout";
 import Dashboard from "./pages/Dashboard";
 import Tutor from "./pages/Tutor";
@@ -9,10 +11,25 @@ import Progress from "./pages/Progress";
 import Resources from "./pages/Resources";
 import Settings from "./pages/Settings";
 
+import Login from "./features/auth/Login";
+import Register from "./features/auth/Register";
+import ProtectedRoute from "./features/auth/ProtectedRoute";
+
 export default function App() {
   return (
     <Routes>
-      <Route element={<AppLayout />}>
+      {/* Public routes */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+
+      {/* Protected routes */}
+      <Route
+        element={
+          <ProtectedRoute>
+            <AppLayout />
+          </ProtectedRoute>
+        }
+      >
         <Route index element={<Dashboard />} />
         <Route path="tutor" element={<Tutor />} />
         <Route path="learning-path" element={<LearningPath />} />
@@ -21,8 +38,9 @@ export default function App() {
         <Route path="progress" element={<Progress />} />
         <Route path="resources" element={<Resources />} />
         <Route path="settings" element={<Settings />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
+
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
