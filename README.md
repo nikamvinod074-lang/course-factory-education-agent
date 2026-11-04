@@ -1,43 +1,72 @@
-# Parivestra AI Tutor — Member 1 Foundation
+# Parivestra AI Tutor
 
-This starter covers:
-- React + Vite setup
-- Project folder structure
-- Shared UI components
-- React Router configuration
-- Parivestra logo integration
-- Git/GitHub setup instructions
+**Parivestra AI Tutor** is an AI-powered educational assistant designed to help students understand concepts through simple explanations, examples, and interactive conversations.
 
-## Run locally
-1. Install Node.js 18+.
-2. Open this folder in VS Code.
-3. Run `npm install`.
-4. Run `npm run dev`.
-5. Open the localhost URL printed in the terminal.
+## Features
 
-## Build
-Run `npm run build`.
+- AI-powered responses using Ollama and Qwen3.
+- Educational knowledge base covering multiple subjects.
+- Dynamic answers to questions beyond the knowledge base.
+- Conversational context for follow-up questions.
+- FastAPI integration for communication with other applications.
+- Interactive API documentation using Swagger UI.
 
-## GitHub
-Create an empty repository on GitHub, then run:
+## Technologies Used
+
+- Python
+- Ollama
+- Qwen3
+- FastAPI
+- Uvicorn
+- JSON
+
+## Run the Project
+
+Install dependencies:
+
 ```bash
-git init
-git add .
-git commit -m "Initial Parivestra React Vite foundation"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/parivestra-tutor-ai.git
-git push -u origin main
+pip install -r requirements.txt
 ```
-Replace `YOUR-USERNAME` with your GitHub username.
 
-## Routes
-- `/` Dashboard
-- `/tutor` AI Tutor
-- `/learning-path` Learning Path
-- `/subjects` Subjects
-- `/practice` Practice
-- `/progress` Progress
-- `/resources` Resources
-- `/settings` Settings
+Start the AI Tutor:
 
-The pages are starter placeholders. Each module teammate can replace its page component while keeping the agreed route and shared layout.
+```bash
+python app.py
+```
+
+Start the API server:
+
+```bash
+uvicorn api:app --reload
+```
+
+Open API documentation:
+
+http://127.0.0.1:8000/docs
+
+## API Endpoint
+
+**POST /ask**
+
+Example request:
+
+```json
+{
+  "question": "Explain Artificial Intelligence simply."
+}
+```
+
+## Project Structure
+
+```text
+course-factory-education-agent/
+├── agents/
+│   └── tutor_agent.py
+├── knowledge_base/
+│   └── topics.json
+├── tests/
+├── api.py
+├── app.py
+├── requirements.txt
+└── README.md
+```
