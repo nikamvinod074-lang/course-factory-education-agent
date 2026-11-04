@@ -1,0 +1,39 @@
+{
+  "topics": [
+    {
+      "name": "Python",
+      "keywords": ["python", "python programming", "python language"],
+      "explanation": "Python is a simple and powerful programming language used to develop websites, software, automation tools and AI applications.",
+      "example": "For example, print('Hello World') displays Hello World on the screen.",
+      "hint": "Python is known for its simple and easy-to-read syntax."
+    },
+    {
+      "name": "Artificial Intelligence",
+      "keywords": ["ai", "artificial intelligence", "intelligent machines"],
+      "explanation": "Artificial Intelligence is a technology that allows machines to perform tasks that normally require human intelligence, such as learning, reasoning and problem-solving.",
+      "example": "Google Maps uses AI to suggest the fastest route.",
+      "hint": "Think about how machines can perform tasks that usually need human intelligence."
+    },
+    {
+      "name": "Machine Learning",
+      "keywords": ["machine learning", "ml", "learning from data"],
+      "explanation": "Machine Learning is a branch of AI that allows computers to learn patterns from data and make predictions without being explicitly programmed for every task.",
+      "example": "Email spam filters learn to identify unwanted emails.",
+      "hint": "Remember: Machine Learning means learning from data."
+    },
+    {
+      "name": "Networking",
+      "keywords": ["networking", "computer network", "computer networking"],
+      "explanation": "Computer networking is the process of connecting two or more computers to share information and resources.",
+      "example": "When your laptop connects to Wi-Fi and accesses the internet, it uses computer networking.",
+      "hint": "Think about how multiple computers communicate with each other."
+    },
+    {
+      "name": "Java",
+      "keywords": ["java", "java programming", "java language"],
+      "explanation": "Java is a popular object-oriented programming language used to develop desktop, web and mobile applications.",
+      "example": "System.out.println('Hello World'); displays a message in Java.",
+      "hint": "Java is famous for the concept: Write Once, Run Anywhere."
+    }
+  ]
+}
